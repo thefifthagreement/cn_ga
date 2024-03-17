@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ga_101"
+version = "0.0.1"
+dependencies = [
+    "click",
+]
+
+[project.scripts]
+ga_101 = "ga_101.main:cli"
+
+[tool.setuptools]
+packages = ["ga_101"]

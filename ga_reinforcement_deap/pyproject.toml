@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ga_reinforcement_deap"
+version = "0.0.1"
+dependencies = [
+    "click == 8.1.7",
+    "deap == 1.4.1",
+    "gymnasium == 0.29.1",
+    "gymnasium[classic-control]",
+]
+
+[project.scripts]
+ga_reinforcement_deap = "ga_reinforcement_deap.main:cli"
+
+[tool.setuptools]
+packages = ["ga_reinforcement_deap"]
