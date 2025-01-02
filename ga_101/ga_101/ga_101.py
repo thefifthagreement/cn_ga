@@ -59,7 +59,7 @@ def generation(population, elite_percent, low_class_percent, mutate_percent):
 
 
 # TODO Define the population size and the maximum number of iterations
-def algorithm(population_size, elite_percent, max_iter, low_class_percent, mutate_percent):
+def algorithm(population_size, elite_percent, low_class_percent, mutate_percent, max_iter):
     chrom_size = answer_len()
 
     # create the base population
