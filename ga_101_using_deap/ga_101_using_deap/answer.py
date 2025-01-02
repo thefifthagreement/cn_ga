@@ -7,7 +7,7 @@ ALPHABET = string.ascii_letters + " !'.,"
 
 # read the key from a file
 def get_key():
-    with open("key.pkl", "rb") as f:
+    with open("./ga_101_using_deap/key.pkl", "rb") as f:
         return pickle.load(f)
 
 
